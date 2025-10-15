@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Donation Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌱 Donation & Impact Calculator</h1>
+      <p>Calculate your donation and see how many trees you can plant!</p>
+    </header>
+    <section class="about-us">
+      <div class="content">
+        <h2>About Us</h2>
+        <p>
+          🌱 Jamuna Foundation has been dedicated to changing and shaping lives through impactful community service. From our humble beginnings, we have grown into a trusted NGO committed to addressing some of society’s biggest challenges.
+
+​
+        </p>
+        <p>
+          💡 Our Donation & Impact Calculator allows you to see how your
+          contribution makes a difference. Enter your name and donation amount,
+          and see how many trees you can plant. <b>Every ₹50 plants 1 tree!</b>
+        </p>
+        <p>
+          📊 The calculator also tracks past donations, total contributions, and
+          total trees planted, giving you a clear view of your impact over time.
+        </p>
+        <p>
+          🌟 Together, with your support, we can create a greener, healthier
+          world—one tree at a time!
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <div class="calculator">
+        <h2 id="donation-head"> Donation Calculator</h2>
+        <input type="text" id="donorName" placeholder="Enter your name" />
+        <div class="display" id="display">0</div>
+
+        <div class="button-grid">
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
+          <button class="btn" data-value="6">6</button>
+          <button class="btn" data-value="7">7</button>
+          <button class="btn" data-value="8">8</button>
+          <button class="btn" data-value="9">9</button>
+          <button class="btn" data-value="0">0</button>
+
+          <button class="btn" id="clear" style="flex: 1">C</button>
+          <div style="display: flex; gap: 5px">
+            <button class="btn toggle-btn active" id="plus" style="flex: 1">
+              +
+            </button>
+            <button class="btn toggle-btn" id="minus" style="flex: 1">-</button>
+          </div>
+          <button class="btn" id="donate">Donate</button>
+          <button class="btn" id="impact">Impact</button>
+        </div>
+      </div>
+
+      <section class="past-donations">
+        <h2>Past Donations</h2>
+        <ul id="donationList"></ul>
+        <p id="totalSummary">Total: ₹0 | Trees Planted: 0</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Jamuna Foundation | Made by Arpit Gupta</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
